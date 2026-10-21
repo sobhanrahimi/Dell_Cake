@@ -73,23 +73,61 @@
 
 @media (max-width: 600px) {
     .tabs-container {
-        margin: 20px 0 40px;
+        margin: 20px 0 35px;
+        padding: 0;
     }
 
     .order-tabs {
         width: 100%;
         padding: 4px;
+        gap: 3px;
     }
 
     .tab-link {
-        flex: 1;
-        padding: 12px 10px;
-        font-size: 0.9rem;
+        flex: 1 1 0;
+        min-width: 0;
+        padding: 10px 4px;
+        font-size: 0.82rem;
         justify-content: center;
-        gap: 6px;
+        gap: 5px;
     }
 
     .tab-link i {
-        font-size: 1rem;
+        font-size: 0.95rem;
+        flex-shrink: 0;
+    }
+}
+
+@media (max-width: 380px) {
+    .order-tabs {
+        padding: 3px;
+        gap: 2px;
+    }
+
+    .tab-link {
+        padding: 9px 2px;
+        font-size: 0.75rem;
+        gap: 4px;
+    }
+
+    .tab-link i {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 340px) {
+    .order-tabs {
+        padding: 2px;
+        gap: 2px;
+    }
+
+    .tab-link {
+        padding: 8px 1px;
+        font-size: 0.7rem;
+        gap: 3px;
+    }
+
+    .tab-link i {
+        font-size: 0.78rem;
     }
 }
